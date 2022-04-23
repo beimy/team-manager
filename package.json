@@ -1,0 +1,28 @@
+{
+  "name": "team-manager",
+  "version": "1.0.0",
+  "description": "A command line application that lets users build an HTML page that displays a team based on user input.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beimy/team-manager.git"
+  },
+  "author": "Aaron Rones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beimy/team-manager/issues"
+  },
+  "homepage": "https://github.com/beimy/team-manager#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.2"
+  }
+}
