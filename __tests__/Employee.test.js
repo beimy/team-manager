@@ -1,8 +1,15 @@
 const { test, expect } = require('@jest/globals');
 const Employee = require('../lib/Employee.js');
 
+const mockData = {
+    name: 'Steve',
+    id: null,
+    email: 'steve@something.com'
+}
+
 test('creates a new employee', () => {
-    const employee = new Employee('Steve', 'steve@something.com');
+    const employee = new Employee(mockData);
+
 
     expect(employee.name).toEqual(expect.any(String));
     expect(employee.id).toEqual(expect.any(Number));
@@ -10,10 +17,10 @@ test('creates a new employee', () => {
 })
 
 test('checks employee methods', () => {
-    const employee = new Employee('Adam', 'adam@something.com');
+    const employee = new Employee(mockData);
 
-    expect(employee.getName()).toBe('Adam');
+    expect(employee.getName()).toBe('Steve');
     expect(employee.getId()).toEqual(expect.any(Number));
-    expect(employee.getEmail()).toBe('adam@something.com');
+    expect(employee.getEmail()).toBe('steve@something.com');
     expect(employee.getRole()).toBe('Employee');
 })
