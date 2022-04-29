@@ -1,7 +1,7 @@
 const Manager = require('../lib/Manager');
 
 test('creates a new manager', () => {
-    const manager = new Manager('Manager', 'manager@somewhere.com', 15, 201);
+    const manager = new Manager('Manager', 'manager@somewhere.com', 201, 15);
 
     expect(manager.name).toEqual(expect.any(String));
     expect(manager.id).toEqual(expect.any(Number));
