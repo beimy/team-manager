@@ -1,7 +1,14 @@
 const Engineer = require('../lib/Engineer');
 
+const mockData = {
+    name: 'Engine', 
+    email: 'engineer@something.com',
+    gitHub: 'gitName',
+    id: null
+}
+
 test('creates new engineer', () => {
-    const engineer = new Engineer('Engine', 'engineer@something.com', 'gitName', 20);
+    const engineer = new Engineer(mockData);
 
     expect(engineer.name).toEqual(expect.any(String));
     expect(engineer.id).toEqual(expect.any(Number));
@@ -10,7 +17,7 @@ test('creates new engineer', () => {
 })
 
 test('checks engineer methods', () => {
-    const engineer = new Engineer('Engine', 'engineer@something.com', 'gitName', 20);
+    const engineer = new Engineer(mockData);
 
     expect(engineer.getName()).toBe('Engine');
     expect(engineer.getId()).toEqual(expect.any(Number));

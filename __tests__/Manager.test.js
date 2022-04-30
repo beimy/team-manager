@@ -1,7 +1,14 @@
 const Manager = require('../lib/Manager');
 
+const mockData = {
+    name : 'Manager',
+    email: 'manager@somewhere.com',
+    officeNumber: null, 
+    id: null
+}
+
 test('creates a new manager', () => {
-    const manager = new Manager('Manager', 'manager@somewhere.com', 201, 15);
+    const manager = new Manager(mockData);
 
     expect(manager.name).toEqual(expect.any(String));
     expect(manager.id).toEqual(expect.any(Number));
@@ -11,7 +18,7 @@ test('creates a new manager', () => {
 })
 
 test('checks manager methods', () => {
-    const manager = new Manager('Manager', 'manager@somewhere.com');
+    const manager = new Manager(mockData);
 
     expect(manager.getName()).toBe('Manager');
     expect(manager.getId()).toEqual(expect.any(Number));
