@@ -22,7 +22,7 @@ const generateCards = employeeList => {
                 <div class="card-body container bg-secondary">
                     <ul class="list-group">
                         <li id="id" class="list-group-item">ID: ${id}</li>
-                        <li id="email" class="list-group-item">Email: ${email}</li>
+                        <li id="email" class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>
                         <li id="officeNumber" class="list-group-item">Office Number: ${officeNumber}</li>
                     </ul>
                 </div>
@@ -50,8 +50,8 @@ const generateCards = employeeList => {
                     <div class="card-body container bg-secondary">
                         <ul class="list-group">
                             <li id="id" class="list-group-item">ID: ${id}</li>
-                            <li id="email" class="list-group-item">Email: ${email}</li>
-                            <li id="gitHubName" class="list-group-item">GitHub Name: ${gitHub}</li>
+                            <li id="email" class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>
+                            <li id="gitHubName" class="list-group-item">GitHub Name: <a href="https://github.com/${gitHub}" target="_blank">${gitHub}</a></li>
                         </ul>
                     </div>
         
@@ -78,7 +78,7 @@ const generateCards = employeeList => {
                     <div class="card-body container bg-secondary">
                         <ul class="list-group">
                             <li id="id" class="list-group-item">ID: ${id}</li>
-                            <li id="email" class="list-group-item">Email: ${email}</li>
+                            <li id="email" class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>
                             <li id="school" class="list-group-item">School: ${school}</li>
                         </ul>
                     </div>
