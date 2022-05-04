@@ -34,10 +34,6 @@
   
   If you would like to contribute or have questions ask me at my email or on github.
 
-  ## Testing Instructions
-  
-  Curren
-
   ## Questions
     
   If you have any questions about this project you can message me at these links:<br>
