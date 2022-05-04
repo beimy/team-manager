@@ -10,8 +10,6 @@
 
   [Contribution Guidelines](#Contribution-Guidelines)
 
-  [Testing Instructions](#Testing-Instructions)
-
   [License Info](#License)
 
   [Questions](#Questions)
